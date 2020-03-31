@@ -1,0 +1,30 @@
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+th
+{
+
+    text-align: left;
+    background-color: #192965;
+    color: #ffffff;
+}
+th>i
+{    
+    float: right;
+}
+tr:nth-child(even)
+{
+    background:#3498DB
+}
+tr:nth-child(odd)
+{
+    background:#f0efef
+}
+th,td
+{
+    padding: 8px;
+    border: 1px solid #ffffff;
+}
+

@@ -1,0 +1,431 @@
+/* base styles */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    content: #000;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: #262626;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.container
+{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* nav style */
+
+.main-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+}
+.main-nav .logo
+{
+    width: 110px;
+}
+.main-nav >a 
+{
+    display: flex;
+}
+
+.main-nav ul
+{
+    display: flex;
+    
+}
+.main-nav ul li
+{
+    padding: 0 10px;
+}
+.main-nav ul li a
+{
+    padding-bottom: 2px;
+    transition: border-bottom 0.3s;
+}
+.main-nav ul li a:hover
+{
+    border-bottom: 2px solid black;
+}
+
+.mainmenu
+{
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+
+/* showcase style */
+
+.showcase
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(assets/showcase.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom:20px ;
+}
+
+.showcase h2,.showcase p
+{
+    margin-bottom: 10px;
+}
+
+.showcase .btn
+{
+    margin-top: 20px;
+}
+
+.showcase a,i
+{
+    transition: all 0.3s;
+}
+.showcase a:hover
+{
+    opacity: .7;
+}
+.showcase a:hover i
+{
+    margin-left: 10px;
+}
+
+/*home-cards style*/
+.home-cards
+{
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.home-cards img
+{
+    width: 100%;
+    margin-bottom:20px ;
+}
+.home-cards h3
+{
+    margin-bottom: 5px;
+}
+.home-cards a
+{
+    display: inline-block;
+    padding-top:10px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards a i
+{
+    transition: margin-left 0.3s;
+
+}
+
+.home-cards a:hover i
+{
+    margin-left: 10px;
+}
+/*style btn*/
+
+.btn
+{
+    display: inline-block;
+    background: #262626;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* style xbox*/
+.xbox
+{
+    width: 100%;
+    height: 400px;
+    background-image: url(assets/xbox.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-bottom: 40px;
+}
+.content
+{
+    padding: 50px 0 0 30px;
+    color: white;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.xbox p
+{
+    margin: 10px 0 20px;
+}
+
+.xbox i
+{
+    transition: all 0.3s;
+}
+.xbox a:hover
+{
+    opacity: .7;
+}
+.xbox a:hover i
+{
+    margin-left: 10px;
+}
+
+.cacbon
+{
+    width: 100%;
+    height: 350px;
+    background-image: url(assets/carbon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cacbon .content
+{
+    padding: 50px 0 30px 0;
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.cacbon_overlay
+{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0.4;
+}
+.cacbon
+{
+    transition: all 0.3s;
+}
+.cacbon a:hover
+{
+    opacity: .7;
+}
+
+.cacbon a:hover i
+{
+    margin-left: 10px;
+}
+
+.follow
+{
+    display: flex;
+    align-items: center;
+    margin: 30px 0 30px;
+}
+.follow a
+{
+    margin-left: 10px;
+}
+
+.links
+{
+    background-color: #f2f2f2;
+    color: #616161;
+    margin-bottom: 20px;
+    padding: 35px 0;
+}
+.links-inner
+{
+    display: grid;
+    align-items: flex-start ;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    justify-content: center;    
+}
+.links-inner li
+{
+    line-height: 2;
+}
+
+footer
+{
+    background-color: #f2f2f2;
+    color: #616161;
+    padding: 20px 0;
+}
+.footer-inner
+{
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+
+}
+.footer-inner ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer-inner li
+{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+footer div
+{
+    margin-bottom: 20px;
+    display: flex;
+}
+.menu-btn
+{
+    display: none;
+}
+.links a , .footer-inner a
+{
+    transition: border-bottom 0.3s;
+}
+.links a:hover , .footer-inner a:hover
+{
+    border-bottom: 2px solid black  ;
+}
+
+
+@media screen and (max-width:720px)
+{
+    .mainmenu
+    {
+        margin: 0;
+    }
+    .main-nav
+    {
+        position: relative;
+    }
+    .menu-btn
+    {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    .right-menu
+    {
+        margin-right:0 ;
+    }
+    .menu-btn:hover
+    {
+        opacity: 0.5;
+    }
+    
+    .home-cards
+    {
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .links-inner
+    {
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .footer-inner ul
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-nav ul.mainmenu
+    {
+        position: absolute;
+        background-color: #f2f2f2;
+        top: 100%;
+        left: 0;
+        display: block;
+        width: 50%;
+        height: 100%;
+        opacity: 0.9;
+        transition: transform 0.7s;
+        transform: translate(-500px);
+    }
+    .main-nav ul.mainmenu li
+    {
+        padding: 10px 0 10px 20px ;
+        background-color: #f2f2f2;
+    }
+    .main-nav ul.mainmenu.show
+    {
+        top: 80%;
+        left: 0;
+        transition: transform 0.5s;
+        transform: translate(0);
+    }
+    #logo
+    {
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width:420px)
+{
+    .home-cards
+    {
+        grid-template-columns: 1fr;
+    }
+    .links-inner
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #logo
+    {
+        margin-left:30% ;
+    }
+    .footer-inner div
+    {
+        display: none;
+    }
+    .footer-inner li
+    {
+        margin:0;
+    }
+}

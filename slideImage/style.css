@@ -1,0 +1,23 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carolsel-container
+{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carolsel-slide
+{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+.carolsel-slide img
+{
+    width: 100%;
+}
